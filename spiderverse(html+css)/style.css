@@ -1,0 +1,169 @@
+/* ==========================================================
+   style.css  --  EXTERNAL stylesheet
+   Shared by index.html, beginning.html and ending.html.
+   Every page links to this one file, so the theme lives in
+   a single place. Theme: Spider-Verse comic / glitch look.
+   ========================================================== */
+
+/* ---------- Page basics ---------- */
+body {
+    background-color: #0d0d1a;
+    /* small dot pattern = comic "halftone" print effect */
+    background-image: radial-gradient(#23233d 1.5px, transparent 1.5px);
+    background-size: 14px 14px;
+    color: #f2f2f2;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 0;
+    padding: 20px;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ---------- Header ---------- */
+header {
+    text-align: center;
+    border-bottom: 4px solid #ff2ec4;
+    padding-bottom: 14px;
+    margin-bottom: 28px;
+}
+
+.site-title {
+    font-family: Impact, "Arial Black", sans-serif;
+    font-size: 54px;
+    letter-spacing: 2px;
+    color: #ff2ec4;
+    margin: 0;
+    /* two offset shadows fake the cyan/magenta glitch split */
+    text-shadow: 3px 0 #00eaff, -3px 0 #ffea00;
+}
+
+.log {
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+    color: #00eaff;
+    margin: 4px 0 16px;
+}
+
+/* ---------- Navigation ---------- */
+nav a {
+    display: inline-block;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffea00;
+    text-decoration: none;
+    border: 2px solid #ffea00;
+    padding: 4px 14px;
+    margin: 0 4px;
+}
+
+nav a:hover {
+    background-color: #ffea00;
+    color: #0d0d1a;
+}
+
+/* ---------- Headings ---------- */
+h1 {
+    font-family: Impact, "Arial Black", sans-serif;
+    font-size: 44px;
+    font-weight: normal;
+    text-align: center;
+    color: #00eaff;
+    margin: 10px 0 20px;
+    text-shadow: 3px 3px 0 #ff2ec4;
+}
+
+h2 {
+    font-family: Verdana, sans-serif;
+    font-size: 22px;
+    color: #ff2ec4;
+    border-left: 8px solid #ffea00;
+    padding-left: 12px;
+    margin: 36px 0 12px;
+}
+
+/* ---------- Text ---------- */
+p {
+    text-align: justify;
+    margin: 0 0 16px;
+}
+
+a {
+    color: #00eaff;
+}
+
+a:hover {
+    color: #ffea00;
+}
+
+mark {
+    background-color: #ffea00;
+    color: #0d0d1a;
+    padding: 0 5px;
+}
+
+/* dialogue lines on the beginning page */
+.speech {
+    color: #00eaff;
+    font-weight: bold;
+    border-left: 3px solid #00eaff;
+    padding-left: 14px;
+}
+
+/* small bullet-style lines (interests, people I met) */
+.points {
+    line-height: 2;
+}
+
+/* ---------- Images ---------- */
+figure {
+    margin: 32px 0;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    border: 5px solid #f2f2f2;
+    /* hard, un-blurred shadow = printed comic panel */
+    box-shadow: 10px 10px 0 #ff2ec4;
+}
+
+figcaption {
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    color: #00eaff;
+    margin-top: 16px;
+}
+
+/* ---------- Footer links ---------- */
+hr {
+    border: none;
+    border-top: 4px solid #ff2ec4;
+    margin: 40px 0 16px;
+}
+
+.pager {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.pager a {
+    color: #ffea00;
+    margin: 0 10px;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 600px) {
+    .site-title { font-size: 36px; }
+    h1 { font-size: 34px; }
+    nav a { margin: 4px 2px; }
+}
